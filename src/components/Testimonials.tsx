@@ -1,30 +1,70 @@
 import { motion } from 'motion/react';
 import { Quote } from 'lucide-react';
 
+// const testimonials = [
+//   {
+//     name: 'Oliver Hudson',
+//     role: 'CEO, TechFlow',
+//     text: 'Sarita transformed our brand identity into something truly remarkable. Her eye for minimalism and bold use of color is exactly what we needed.',
+//     img: 'https://picsum.photos/seed/t1/100/100'
+//   },
+//   {
+//     name: 'Janny Doe',
+//     role: 'Creative Director, Vision',
+//     text: 'Working with Sarita was a breeze. She understands the brief perfectly and delivers beyond expectations every single time.',
+//     img: 'https://picsum.photos/seed/t2/100/100'
+//   },
+//   {
+//     name: 'Luna Smith',
+//     role: 'Founder, EcoStyle',
+//     text: 'The photography series Sarita created for our launch was breathtaking. She has a way of capturing the essence of a product like no other.',
+//     img: 'https://picsum.photos/seed/t3/100/100'
+//   },
+//   {
+//     name: 'Marko Vane',
+//     role: 'Marketing Manager, GlobalCo',
+//     text: 'Professional, creative, and highly skilled. Sarita is our go-to designer for all our high-stakes print and digital projects.',
+//     img: 'https://picsum.photos/seed/t4/100/100'
+//   }
+// ];
+
+
 const testimonials = [
   {
-    name: 'Oliver Hudson',
-    role: 'CEO, TechFlow',
-    text: 'Sarita transformed our brand identity into something truly remarkable. Her eye for minimalism and bold use of color is exactly what we needed.',
-    img: 'https://picsum.photos/seed/t1/100/100'
+    name: 'Vikash Tomar',
+    role: 'Marketing Head, UrbanKart',
+    text: 'Rahul did an amazing job with our website redesign. His attention to detail and modern design approach really elevated our brand.',
+    img: 'https://picsum.photos/seed/ind1/100/100'
   },
   {
-    name: 'Janny Doe',
-    role: 'Creative Director, Vision',
-    text: 'Working with Sarita was a breeze. She understands the brief perfectly and delivers beyond expectations every single time.',
-    img: 'https://picsum.photos/seed/t2/100/100'
+    name: 'Amit Patel',
+    role: 'CEO, Patel Exports',
+    text: 'Working with Rahul was a great experience. He understood our requirements perfectly and delivered the project on time with excellent quality.',
+    img: 'https://picsum.photos/seed/ind2/100/100'
   },
   {
-    name: 'Luna Smith',
-    role: 'Founder, EcoStyle',
-    text: 'The photography series Sarita created for our launch was breathtaking. She has a way of capturing the essence of a product like no other.',
-    img: 'https://picsum.photos/seed/t3/100/100'
+    name: 'Neha Gupta',
+    role: 'Creative Director, BrightAds',
+    text: 'Rahul is extremely talented and professional. His design sense and development skills helped us launch our campaign website smoothly.',
+    img: 'https://picsum.photos/seed/ind3/100/100'
   },
   {
-    name: 'Marko Vane',
-    role: 'Marketing Manager, GlobalCo',
-    text: 'Professional, creative, and highly skilled. Sarita is our go-to designer for all our high-stakes print and digital projects.',
-    img: 'https://picsum.photos/seed/t4/100/100'
+    name: 'Arjun Mehta',
+    role: 'Founder, Mehta Studios',
+    text: 'Rahul created a stunning portfolio website for our studio. His creativity and clean coding style really impressed our team.',
+    img: 'https://picsum.photos/seed/ind4/100/100'
+  },
+  {
+    name: 'Kavita Singh',
+    role: 'Director, Singh Creations',
+    text: 'Professional, reliable, and highly skilled. Rahul always delivers beyond expectations and is a pleasure to work with.',
+    img: 'https://picsum.photos/seed/ind5/100/100'
+  },
+  {
+    name: 'Rohit Agarwal',
+    role: 'Founder, NextGen Solutions',
+    text: 'Rahul helped us build a fast and responsive website that our clients love. Highly recommended for any modern web project.',
+    img: 'https://picsum.photos/seed/ind6/100/100'
   }
 ];
 
