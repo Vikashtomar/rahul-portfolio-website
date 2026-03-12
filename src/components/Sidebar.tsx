@@ -84,7 +84,7 @@ export default function Sidebar() {
 
       {/* Social Links */}
       <div className="p-6 flex justify-center space-x-4 border-t border-white/10">
-        <a href="#" className="text-zinc-400 hover:text-primary transition-colors"><Instagram size={18} /></a>
+        <a href="https://www.instagram.com/sh.arma7267_45?igsh=MWlweTBlc3MzNXN1OA==" className="text-zinc-400 hover:text-primary transition-colors"><Instagram size={18} /></a>
         <a href="#" className="text-zinc-400 hover:text-primary transition-colors"><Twitter size={18} /></a>
         <a href="#" className="text-zinc-400 hover:text-primary transition-colors"><Linkedin size={18} /></a>
       </div>

@@ -45,7 +45,7 @@ export default function Contact() {
                 </div>
                 <div className="ml-6">
                   <p className="text-xs uppercase tracking-widest text-zinc-400 font-bold mb-1">Visit Me</p>
-                  <p className="text-lg font-display">Farah, Mathura 281122</p>
+                  <p className="text-lg font-display">Nagla bar Farah, Mathura 281122</p>
                 </div>
               </div>
             </div>
@@ -65,7 +65,7 @@ export default function Contact() {
                   <input 
                     type="text" 
                     className="w-full px-4 py-3 bg-white border-b-2 border-transparent focus:border-primary outline-none transition-all"
-                    placeholder="John Doe"
+                    placeholder="Rahul Sharma"
                   />
                 </div>
                 <div>
@@ -73,7 +73,7 @@ export default function Contact() {
                   <input 
                     type="email" 
                     className="w-full px-4 py-3 bg-white border-b-2 border-transparent focus:border-primary outline-none transition-all"
-                    placeholder="john@example.com"
+                    placeholder="rahulsharma@gmail.com"
                   />
                 </div>
               </div>

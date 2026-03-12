@@ -2,22 +2,28 @@
 import { useState } from 'react';
 import { Plus, X } from 'lucide-react';
 
-const categories = ['All', 'Print Design', 'Web Design', 'Photography', 'Video'];
+const categories = ['All', 'Poster Design', 'After-Before', 'Image manipulation', 'Video'];
 
 const projects = [
-  { id: 1, title: 'Minimalist Brand Identity', category: 'Print Design', img: '/stuff/shoe.jpeg' },
-  { id: 2, title: 'E-commerce UI/UX', category: 'Web Design', img: '/stuff/one.jpeg' },
-  { id: 3, title: 'Urban Editorial Series', category: 'Photography', img: '/stuff/buds.jpeg' },
-  { id: 4, title: 'Corporate Annual Report', category: 'Print Design', img: '/stuff/horse.jpeg' },
-  { id: 5, title: 'Creative Agency Site', category: 'Web Design', img: '/stuff/sale.jpeg' },
-  { id: 6, title: 'Nature Photography', category: 'Photography', img: '/stuff/nature.jpeg' },
+  { id: 1, title: 'Nike Poster', category: 'Poster Design', img: '/stuff/shoe.jpeg' },
+  { id: 2, title: 'Image restolation', category: 'After-Before', img: '/stuff/beforegirl.jpg' },
+  { id: 3, title: 'Wire-less Buds', category: 'Poster Design', img: '/stuff/buds.jpeg' },
+  { id: 4, title: 'Image manipulation', category: 'Image manipulation', img: '/stuff/god.jpeg' },
+  { id: 5, title: 'abhi bus', category: 'Poster Design', img: '/stuff/sale.jpeg' },
+  { id: 6, title: 'Image manipulation', category: 'Image manipulation', img: '/stuff/dslr.jpg' },
+  { id: 9, title: 'Image restolation', category: 'After-Before', img: '/stuff/aftergirl.jpg' },
+  { id: 10, title: 'Image restolation', category: 'After-Before', img: '/stuff/beforeboy.jpg' },
+  { id: 11, title: 'Image restolation', category: 'After-Before', img: '/stuff/afterboy.jpg' },
+  { id: 12, title: 'Day to night', category: 'After-Before', img: '/stuff/day.jpg' },
+  { id: 13, title: 'Day to night', category: 'After-Before', img: '/stuff/night.jpg' },
+   
   
   
   { 
     id: 7, 
     title: 'My Creative Reel', 
     category: 'Video', 
-    video: '/videos/myvid.mp4', 
+    video: '/videos/vrindavan.mp4', 
     type: 'video'
   },
   
@@ -26,6 +32,14 @@ const projects = [
     title: 'The three trains', 
     category: 'Video', 
     video: '/videos/trains.mp4', 
+    type: 'video'
+  },
+  
+  { 
+    id: 14, 
+    title: 'My Cinamatic shots on track', 
+    category: 'Video', 
+    video: '/videos/mystationvid.mp4', 
     type: 'video'
   },
   

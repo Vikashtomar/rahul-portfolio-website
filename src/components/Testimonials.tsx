@@ -1,32 +1,6 @@
 import { motion } from 'motion/react';
 import { Quote } from 'lucide-react';
 
-// const testimonials = [
-//   {
-//     name: 'Oliver Hudson',
-//     role: 'CEO, TechFlow',
-//     text: 'Sarita transformed our brand identity into something truly remarkable. Her eye for minimalism and bold use of color is exactly what we needed.',
-//     img: 'https://picsum.photos/seed/t1/100/100'
-//   },
-//   {
-//     name: 'Janny Doe',
-//     role: 'Creative Director, Vision',
-//     text: 'Working with Sarita was a breeze. She understands the brief perfectly and delivers beyond expectations every single time.',
-//     img: 'https://picsum.photos/seed/t2/100/100'
-//   },
-//   {
-//     name: 'Luna Smith',
-//     role: 'Founder, EcoStyle',
-//     text: 'The photography series Sarita created for our launch was breathtaking. She has a way of capturing the essence of a product like no other.',
-//     img: 'https://picsum.photos/seed/t3/100/100'
-//   },
-//   {
-//     name: 'Marko Vane',
-//     role: 'Marketing Manager, GlobalCo',
-//     text: 'Professional, creative, and highly skilled. Sarita is our go-to designer for all our high-stakes print and digital projects.',
-//     img: 'https://picsum.photos/seed/t4/100/100'
-//   }
-// ];
 
 
 const testimonials = [
