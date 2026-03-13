@@ -1,5 +1,5 @@
  import { motion, AnimatePresence } from 'motion/react';
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { Plus, X } from 'lucide-react';
 
 const categories = ['All', 'Poster Design', 'After-Before', 'Image manipulation', 'Video'];
@@ -16,34 +16,10 @@ const projects = [
   { id: 11, title: 'Image restolation', category: 'After-Before', img: '/stuff/afterboy.jpg' },
   { id: 12, title: 'Day to night', category: 'After-Before', img: '/stuff/day.jpg' },
   { id: 13, title: 'Day to night', category: 'After-Before', img: '/stuff/night.jpg' },
-   
-  
-  
-  { 
-    id: 7, 
-    title: 'My Creative Reel', 
-    category: 'Video', 
-    video: '/videos/vrindavan.mp4', 
-    type: 'video'
-  },
-  
-  { 
-    id: 8, 
-    title: 'The three trains', 
-    category: 'Video', 
-    video: '/videos/trains.mp4', 
-    type: 'video'
-  },
-  
-  { 
-    id: 14, 
-    title: 'My Cinamatic shots on track', 
-    category: 'Video', 
-    video: '/videos/mystationvid.mp4', 
-    type: 'video'
-  },
-  
 
+  { id: 7, title: 'My Creative Reel', category: 'Video', video: '/videos/vrindavan.mp4', type: 'video' },
+  { id: 8, title: 'The three trains', category: 'Video', video: '/videos/trains.mp4', type: 'video' },
+  { id: 14, title: 'My Cinematic shots on track', category: 'Video', video: '/videos/mystationvid.mp4', type: 'video' },
 ];
 
 export default function Portfolio() {
@@ -103,8 +79,10 @@ export default function Portfolio() {
                 {project.type === 'video' ? (
                   <video
                     src={project.video}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-contain"
                     muted
+                    autoPlay
+                    loop
                   />
                 ) : (
                   <img
@@ -153,7 +131,7 @@ export default function Portfolio() {
                     src={selectedProject.video}
                     controls
                     autoPlay
-                    className="w-full rounded-lg"
+                    className="w-full h-auto max-h-[90vh] rounded-lg"
                   />
                 ) : (
                   <img
