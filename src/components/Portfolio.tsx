@@ -112,12 +112,13 @@ export default function Portfolio() {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
             >
-              <button
+
+              {/* <button
                 onClick={() => setSelectedProject(null)}
                 className="absolute top-6 right-6 text-white"
               >
                 <X size={32} />
-              </button>
+              </button> */}
 
               <motion.div
                 initial={{ scale: 0.8 }}
