@@ -19,7 +19,12 @@ const projects = [
 
   { id: 7, title: 'My Creative Reel', category: 'Video', video: '/videos/vrindavan.mp4', type: 'video' },
   { id: 8, title: 'The three trains', category: 'Video', video: '/videos/trains.mp4', type: 'video' },
+
   { id: 14, title: 'My Cinematic shots on track', category: 'Video', video: '/videos/mystationvid.mp4', type: 'video' },
+  
+  
+  { id: 15, title: 'Meetup', category: 'Video', video: '/videos/meetup.mp4', type: 'video' },
+  
 ];
 
 export default function Portfolio() {
@@ -118,6 +123,7 @@ export default function Portfolio() {
                 className="absolute top-6 right-6 text-white"
               >
                 <X size={32} />
+
               </button> */}
 
               <motion.div
