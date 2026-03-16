@@ -23,7 +23,7 @@ const projects = [
   { id: 14, title: 'My Cinematic shots on track', category: 'Video', video: '/videos/mystationvid.mp4', type: 'video' },
   
   
-  { id: 15, title: 'Meetup', category: 'Video', video: '/videos/meetup.mp4', type: 'video' },
+  // { id: 15, title: 'Meetup', category: 'Video', video: '/videos/meetup.mp4', type: 'video' },
   
 ];
 
