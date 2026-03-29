@@ -5,25 +5,25 @@ import { Plus, X } from 'lucide-react';
 const categories = ['All', 'Poster Design', 'After-Before', 'Image manipulation', 'Video'];
 
 const projects = [
-  { id: 1, title: 'Nike Poster', category: 'Poster Design', img: '/stuff/shoe.jpeg' },
-  // { id: 2, title: 'Image restolation', category: 'After-Before', img: '/stuff/beforegirl.jpg' },
-  // { id: 3, title: 'Wire-less Buds', category: 'Poster Design', img: '/stuff/buds.jpeg' },
-  // { id: 4, title: 'Image manipulation', category: 'Image manipulation', img: '/stuff/god.jpeg' },
-  // { id: 5, title: 'abhi bus', category: 'Poster Design', img: '/stuff/sale.jpeg' },
-  // { id: 6, title: 'Image manipulation', category: 'Image manipulation', img: '/stuff/dslr.jpg' },
-  // { id: 9, title: 'Image restolation', category: 'After-Before', img: '/stuff/aftergirl.jpg' },
-  // { id: 10, title: 'Image restolation', category: 'After-Before', img: '/stuff/beforeboy.jpg' },
-  // { id: 11, title: 'Image restolation', category: 'After-Before', img: '/stuff/afterboy.jpg' },
-  // { id: 12, title: 'Day to night', category: 'After-Before', img: '/stuff/day.jpg' },
-  // { id: 13, title: 'Day to night', category: 'After-Before', img: '/stuff/night.jpg' },
+  { id: 1, title: 'Nike Poster', category: 'Poster Design', img: 'https://res.cloudinary.com/dy3y4uwwb/image/upload/v1774784897/shoe_t7zq4n.jpg' },
+   { id: 2, title: 'Image restolation', category: 'After-Before', img: 'https://res.cloudinary.com/dy3y4uwwb/image/upload/v1774784895/beforegirl_vprx9l.jpg' },
+   { id: 3, title: 'Wire-less Buds', category: 'Poster Design', img: 'https://res.cloudinary.com/dy3y4uwwb/image/upload/v1774784895/buds_j3sv66.jpg' },
+   { id: 4, title: 'Image manipulation', category: 'Image manipulation', img: 'https://res.cloudinary.com/dy3y4uwwb/image/upload/v1774784896/god_hjhdge.jpg' },
+   { id: 5, title: 'abhi bus', category: 'Poster Design', img: 'https://res.cloudinary.com/dy3y4uwwb/image/upload/v1774784897/sale_idxcg7.jpg' },
+   { id: 6, title: 'Image manipulation', category: 'Image manipulation', img: 'https://res.cloudinary.com/dy3y4uwwb/image/upload/v1774784896/dslr_u7dhzu.jpg' },
+   { id: 9, title: 'Image restolation', category: 'After-Before', img: 'https://res.cloudinary.com/dy3y4uwwb/image/upload/v1774784894/aftergirl_a6vr09.jpg' },
+   { id: 10, title: 'Image restolation', category: 'After-Before', img: 'https://res.cloudinary.com/dy3y4uwwb/image/upload/v1774784895/beforeboy_vob6xv.jpg' },
+   { id: 11, title: 'Image restolation', category: 'After-Before', img: 'https://res.cloudinary.com/dy3y4uwwb/image/upload/v1774784895/afterboy_bx6rzj.jpg' },
+   { id: 12, title: 'Day to night', category: 'After-Before', img: 'https://res.cloudinary.com/dy3y4uwwb/image/upload/v1774784896/day_nioygp.jpg' },
+   { id: 13, title: 'Day to night', category: 'After-Before', img: 'https://res.cloudinary.com/dy3y4uwwb/image/upload/v1774784896/night_pxdkfn.jpg' },
 
-  // { id: 7, title: 'My Creative Reel', category: 'Video', video: '/videos/vrindavan.mp4', type: 'video' },
-  // { id: 8, title: 'The three trains', category: 'Video', video: '/videos/trains.mp4', type: 'video' },
+  //  { id: 7, title: 'My Creative Reel', category: 'Video', video: '/videos/vrindavan.mp4', type: 'video' },
+  //  { id: 8, title: 'The three trains', category: 'Video', video: '/videos/trains.mp4', type: 'video' },
 
-  // { id: 14, title: 'My Cinematic shots on track', category: 'Video', video: '/videos/mystationvid.mp4', type: 'video' },
+  //  { id: 14, title: 'My Cinematic shots on track', category: 'Video', video: '/videos/mystationvid.mp4', type: 'video' },
   
   
-  // { id: 15, title: 'Meetup', category: 'Video', video: '/videos/meetup.mp4', type: 'video' },
+   { id: 15, title: 'Meetup', category: 'Video', video: '/videos/meetup.mp4', type: 'video' },
   
 ];
 
@@ -118,13 +118,15 @@ export default function Portfolio() {
               exit={{ opacity: 0 }}
             >
 
-              {/* <button
+              { <button
                 onClick={() => setSelectedProject(null)}
                 className="absolute top-6 right-6 text-white"
               >
                 <X size={32} />
 
-              </button> */}
+              </button> }
+
+
 
               <motion.div
                 initial={{ scale: 0.8 }}
