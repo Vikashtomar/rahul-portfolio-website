@@ -1,6 +1,8 @@
  import { motion, AnimatePresence } from 'motion/react';
 import { useState, useRef } from 'react';
 import { Plus, X } from 'lucide-react';
+import { title } from 'process';
+import { img } from 'motion/react-client';
 
 const categories = ['All', 'Poster Design', 'After-Before', 'Image manipulation', 'Video'];
 
@@ -16,6 +18,7 @@ const projects = [
    { id: 11, title: 'Image restolation', category: 'After-Before', img: 'https://res.cloudinary.com/dy3y4uwwb/image/upload/v1774784895/afterboy_bx6rzj.jpg' },
    { id: 12, title: 'Day to night', category: 'After-Before', img: 'https://res.cloudinary.com/dy3y4uwwb/image/upload/v1774784896/day_nioygp.jpg' },
    { id: 13, title: 'Day to night', category: 'After-Before', img: 'https://res.cloudinary.com/dy3y4uwwb/image/upload/v1774784896/night_pxdkfn.jpg' },
+   {id:15, title: 'Tata Sierra', category:'Poster Design', img: 'https://res.cloudinary.com/dy3y4uwwb/image/upload/v1774804691/tatas_j2yr0l.jpg'},
 
     { id: 7, title: 'My Creative Reel', category: 'Video', video: 'https://res.cloudinary.com/dy3y4uwwb/video/upload/v1774801709/vrindavan_r8gao4.mp4', type: 'video' },
     { id: 8, title: 'The three trains', category: 'Video', video: 'https://res.cloudinary.com/dy3y4uwwb/video/upload/v1774784949/trains_bjjpzu.mp4', type: 'video' },
@@ -23,7 +26,7 @@ const projects = [
     { id: 14, title: 'My Cinematic shots on track', category: 'Video', video: 'https://res.cloudinary.com/dy3y4uwwb/video/upload/v1774784974/mystationvid_zbuxbe.mp4', type: 'video' },
   
   
-   { id: 15, title: 'Meetup', category: 'Video', video: 'https://res.cloudinary.com/dy3y4uwwb/video/upload/v1774784982/meetup_xarxuc.mp4', type: 'video' },
+   { id: 16, title: 'Meetup', category: 'Video', video: 'https://res.cloudinary.com/dy3y4uwwb/video/upload/v1774784982/meetup_xarxuc.mp4', type: 'video' },
   
 ];
 
