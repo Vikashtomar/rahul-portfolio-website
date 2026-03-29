@@ -1,107 +1,151 @@
+
 import { motion } from 'motion/react';
 import { Mail, Phone, MapPin, Send } from 'lucide-react';
 
 export default function Contact() {
+
+  const handleWhatsApp = (e) => {
+    e.preventDefault();
+
+    const name = e.target.name.value;
+    const email = e.target.email.value;
+    const subject = e.target.subject.value;
+    const message = e.target.message.value;
+
+    const phoneNumber = "918126567858"; // your number (country code + number)
+
+    const text = `New Contact Form Message
+
+Name: ${name}
+Email: ${email}
+Subject: ${subject}
+Message: ${message}`;
+
+    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(text)}`;
+
+    window.open(url, "_blank");
+
+    // clear form after submit
+    e.target.reset();
+  };
+
   return (
     <section id="contact" className="py-24 px-8 md:px-16 bg-white">
       <div className="max-w-6xl mx-auto">
+        
         <h2 className="text-4xl md:text-5xl mb-16 flex items-center">
           <span className="w-12 h-1 bg-primary mr-4" />
           Contact
         </h2>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+          
           {/* Contact Info */}
           <div>
-            <h3 className="text-2xl font-display mb-6">Feel free to contact me!</h3>
+            <h3 className="text-2xl font-display mb-6">
+              Feel free to contact me!
+            </h3>
+
             <p className="text-zinc-600 mb-10 leading-relaxed">
-              I'm always open to discussing new projects, creative ideas or opportunities to be part of your visions.
+              I'm always open to discussing new projects, creative ideas or opportunities.
             </p>
 
             <div className="space-y-8">
+
               <div className="flex items-center group">
-                <div className="w-12 h-12 bg-surface flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-secondary transition-colors duration-300">
+                <div className="w-12 h-12 bg-surface flex items-center justify-center text-primary">
                   <Mail size={24} />
                 </div>
                 <div className="ml-6">
-                  <p className="text-xs uppercase tracking-widest text-zinc-400 font-bold mb-1">Email Me</p>
-                  <p className="text-lg font-display">rahulsharma8923990@gmail.com</p>
+                  <p className="text-xs uppercase tracking-widest text-zinc-400 font-bold mb-1">
+                    Email
+                  </p>
+                  <p className="text-lg">
+                    rahulsharma8923990@gmail.com
+                  </p>
                 </div>
               </div>
 
               <div className="flex items-center group">
-                <div className="w-12 h-12 bg-surface flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-secondary transition-colors duration-300">
+                <div className="w-12 h-12 bg-surface flex items-center justify-center text-primary">
                   <Phone size={24} />
                 </div>
                 <div className="ml-6">
-                  <p className="text-xs uppercase tracking-widest text-zinc-400 font-bold mb-1">Call Me</p>
-                  <p className="text-lg font-display">+91 8126567858</p>
+                  <p className="text-xs uppercase tracking-widest text-zinc-400 font-bold mb-1">
+                    Phone
+                  </p>
+                  <p className="text-lg">
+                    +91 8126567858
+                  </p>
                 </div>
               </div>
 
               <div className="flex items-center group">
-                <div className="w-12 h-12 bg-surface flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-secondary transition-colors duration-300">
+                <div className="w-12 h-12 bg-surface flex items-center justify-center text-primary">
                   <MapPin size={24} />
                 </div>
                 <div className="ml-6">
-                  <p className="text-xs uppercase tracking-widest text-zinc-400 font-bold mb-1">Visit Me</p>
-                  <p className="text-lg font-display">Nagla bar Farah, Mathura 281122</p>
+                  <p className="text-xs uppercase tracking-widest text-zinc-400 font-bold mb-1">
+                    Location
+                  </p>
+                  <p className="text-lg">
+                    Nagla Bar Farah, Mathura 281122
+                  </p>
                 </div>
               </div>
-            </div>
 
-            <div className="mt-12 p-8 bg-secondary text-white">
-              <h4 className="text-xl font-display mb-4 text-primary">THANKS FOR PATIENCE!</h4>
-              <p className="text-sm text-zinc-400">I usually respond within 24 hours. Looking forward to hearing from you!</p>
             </div>
           </div>
 
           {/* Contact Form */}
           <div className="bg-surface p-8 md:p-12">
-            <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
+            <form className="space-y-6" onSubmit={handleWhatsApp}>
+              
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                <div>
-                  <label className="block text-xs uppercase tracking-widest font-bold mb-2 text-zinc-500">Your Name</label>
-                  <input 
-                    type="text" 
-                    className="w-full px-4 py-3 bg-white border-b-2 border-transparent focus:border-primary outline-none transition-all"
-                    placeholder="Rahul Sharma"
-                  />
-                </div>
-                <div>
-                  <label className="block text-xs uppercase tracking-widest font-bold mb-2 text-zinc-500">Your Email</label>
-                  <input 
-                    type="email" 
-                    className="w-full px-4 py-3 bg-white border-b-2 border-transparent focus:border-primary outline-none transition-all"
-                    placeholder="rahulsharma@gmail.com"
-                  />
-                </div>
-              </div>
-              <div>
-                <label className="block text-xs uppercase tracking-widest font-bold mb-2 text-zinc-500">Subject</label>
                 <input 
+                  name="name"
                   type="text" 
-                  className="w-full px-4 py-3 bg-white border-b-2 border-transparent focus:border-primary outline-none transition-all"
-                  placeholder="Project Inquiry"
+                  placeholder="Your Name"
+                  required
+                  className="w-full px-4 py-3 bg-white border-b-2 focus:border-primary outline-none"
+                />
+
+                <input 
+                  name="email"
+                  type="email" 
+                  placeholder="Your Email"
+                  required
+                  className="w-full px-4 py-3 bg-white border-b-2 focus:border-primary outline-none"
                 />
               </div>
-              <div>
-                <label className="block text-xs uppercase tracking-widest font-bold mb-2 text-zinc-500">Your Message</label>
-                <textarea 
-                  rows={5}
-                  className="w-full px-4 py-3 bg-white border-b-2 border-transparent focus:border-primary outline-none transition-all resize-none"
-                  placeholder="Tell me about your project..."
-                ></textarea>
-              </div>
+
+              <input 
+                name="subject"
+                type="text" 
+                placeholder="Subject"
+                required
+                className="w-full px-4 py-3 bg-white border-b-2 focus:border-primary outline-none"
+              />
+
+              <textarea 
+                name="message"
+                rows={5}
+                placeholder="Your Message"
+                required
+                className="w-full px-4 py-3 bg-white border-b-2 focus:border-primary outline-none resize-none"
+              />
+
               <button 
                 type="submit"
-                className="w-full py-4 bg-secondary text-white font-display uppercase tracking-widest hover:bg-primary hover:text-secondary transition-all duration-300 flex items-center justify-center group"
+                className="w-full py-4 bg-secondary text-white uppercase tracking-widest hover:bg-primary transition-all flex items-center justify-center"
               >
                 Send Message
-                <Send size={18} className="ml-2 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+                <Send size={18} className="ml-2" />
               </button>
+
             </form>
           </div>
+
         </div>
       </div>
     </section>

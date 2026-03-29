@@ -17,13 +17,13 @@ const projects = [
    { id: 12, title: 'Day to night', category: 'After-Before', img: 'https://res.cloudinary.com/dy3y4uwwb/image/upload/v1774784896/day_nioygp.jpg' },
    { id: 13, title: 'Day to night', category: 'After-Before', img: 'https://res.cloudinary.com/dy3y4uwwb/image/upload/v1774784896/night_pxdkfn.jpg' },
 
-  //  { id: 7, title: 'My Creative Reel', category: 'Video', video: '/videos/vrindavan.mp4', type: 'video' },
-  //  { id: 8, title: 'The three trains', category: 'Video', video: '/videos/trains.mp4', type: 'video' },
+    { id: 7, title: 'My Creative Reel', category: 'Video', video: 'https://res.cloudinary.com/dy3y4uwwb/video/upload/v1774801709/vrindavan_r8gao4.mp4', type: 'video' },
+    { id: 8, title: 'The three trains', category: 'Video', video: 'https://res.cloudinary.com/dy3y4uwwb/video/upload/v1774784949/trains_bjjpzu.mp4', type: 'video' },
 
-  //  { id: 14, title: 'My Cinematic shots on track', category: 'Video', video: '/videos/mystationvid.mp4', type: 'video' },
+    { id: 14, title: 'My Cinematic shots on track', category: 'Video', video: 'https://res.cloudinary.com/dy3y4uwwb/video/upload/v1774784974/mystationvid_zbuxbe.mp4', type: 'video' },
   
   
-   { id: 15, title: 'Meetup', category: 'Video', video: '/videos/meetup.mp4', type: 'video' },
+   { id: 15, title: 'Meetup', category: 'Video', video: 'https://res.cloudinary.com/dy3y4uwwb/video/upload/v1774784982/meetup_xarxuc.mp4', type: 'video' },
   
 ];
 
