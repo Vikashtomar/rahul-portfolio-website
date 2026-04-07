@@ -24,7 +24,7 @@ export default function Hero() {
               GRAPHIC DESIGNER
             </span>
             <span className="text-xl md:text-2xl font-display text-accent border-b-2 border-primary pb-1">
-              PHOTOGRAPHER
+              VIDEO EDITOR
             </span>
           </div>
           
