@@ -36,7 +36,7 @@ export default function About() {
             <h2 className="text-4xl md:text-5xl mb-6 flex items-center">
               <span className="w-12 h-1 bg-primary mr-4" />
               About Me
-            </h2>
+            </h2>3
             <h3 className="text-2xl font-display text-accent mb-4">I'm Rahul Sharma, Graphic Designer </h3>
             <p className="text-zinc-600 leading-relaxed mb-8 text-lg">
               Creative and detail-oriented Individual currently pursuing DFM at MAAC Ghaziabad. With a strong foundation in Computer Basics and a year of teaching experience at NCSM, I am passionate about visual storytelling. Skilled in Photoshop, Premiere Pro, and After Effects, I aim to leverage my technical and pedagogical skills in a professional creative environment.
