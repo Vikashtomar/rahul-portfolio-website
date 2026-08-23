@@ -4,15 +4,15 @@ import { Plus, X } from 'lucide-react';
 import { title } from 'process';
 import { img } from 'motion/react-client';
 
-const categories = ['All', 'Poster Design', 'After-Before', 'Image manipulation', 'Video', 'social media'];
+const categories = ['All', 'After-Before', 'Image manipulation', 'Video', 'social media post'];
 
 const projects = [
-  { id: 1, title: 'social media', category: 'Poster Design', img: 'https://res.cloudinary.com/dy3y4uwwb/image/upload/v1774784897/shoe_t7zq4n.jpg' },
+  { id: 1, title: 'social media post', category: 'social media post', img: 'https://res.cloudinary.com/dy3y4uwwb/image/upload/v1774784897/shoe_t7zq4n.jpg' },
    { id: 2, title: 'Image restolation', category: 'After-Before', img: 'https://res.cloudinary.com/dy3y4uwwb/image/upload/v1774784895/beforegirl_vprx9l.jpg' },
-   { id: 3, title: 'Wire-less Buds', category: 'Poster Design', img: 'https://res.cloudinary.com/dy3y4uwwb/image/upload/v1774784895/buds_j3sv66.jpg' },
-   { id: 4, title: 'social media', category: 'Image manipulation', img: 'https://res.cloudinary.com/dy3y4uwwb/image/upload/v1774784896/god_hjhdge.jpg' },
-   { id: 5, title: 'abhi bus', category: 'Poster Design', img: 'https://res.cloudinary.com/dy3y4uwwb/image/upload/v1774784897/sale_idxcg7.jpg' },
-   { id: 6, title: 'social media', category: 'social media', img: 'https://res.cloudinary.com/dy3y4uwwb/image/upload/v1778347422/froot_cbfd4z.jpg' },
+   { id: 3, title: 'Wire-less Buds', category: 'social media post', img: 'https://res.cloudinary.com/dy3y4uwwb/image/upload/v1774784895/buds_j3sv66.jpg' },
+   { id: 4, title: 'social media post', category: 'Image manipulation', img: 'https://res.cloudinary.com/dy3y4uwwb/image/upload/v1774784896/god_hjhdge.jpg' },
+   { id: 5, title: 'abhi bus', category: 'social media post', img: 'https://res.cloudinary.com/dy3y4uwwb/image/upload/v1774784897/sale_idxcg7.jpg' },
+   { id: 6, title: 'social media', category: 'social media post', img: 'https://res.cloudinary.com/dy3y4uwwb/image/upload/v1778347422/froot_cbfd4z.jpg' },
 
   //  { id: 7, title: 'social media', category: 'social media', img: 'https://res.cloudinary.com/dy3y4uwwb/image/upload/v1778347422/froot_cbfd4z.jpg' },
    
@@ -24,9 +24,30 @@ const projects = [
   {
     id: 17,
     title: 'social media',
-    category: 'social media',
+    category: 'social media post',
     img: 'https://res.cloudinary.com/dy3y4uwwb/image/upload/v1778342680/shoe_girl_t3xc9b.jpg',
   },
+
+  {
+    id: 20,
+    title: 'social media',
+    category: 'social media post',
+    img: 'https://res.cloudinary.com/dy3y4uwwb/image/upload/v1787506506/boatheadphone_nyyioz.jpg',
+  },
+  {
+    id: 21,
+    title: 'ZARA',
+    category: 'social media post',
+    img: 'https://res.cloudinary.com/dy3y4uwwb/image/upload/v1787506507/zara_trend_tdgayc.jpg',
+  },
+  {
+    id: 22,
+    title: 'LENSKART',
+    category: 'social media post',
+    img: 'https://res.cloudinary.com/dy3y4uwwb/image/upload/v1787506507/lenskart_dod5sb.jpg',
+  },
+  
+
    
    
    { id: 9, title: 'Image restolation', category: 'After-Before', img: 'https://res.cloudinary.com/dy3y4uwwb/image/upload/v1774784894/aftergirl_a6vr09.jpg' },
@@ -45,6 +66,8 @@ const projects = [
    { id: 16, title: 'Meetup', category: 'Video', video: 'https://res.cloudinary.com/dy3y4uwwb/video/upload/v1774784982/meetup_xarxuc.mp4', type: 'video' },
    
      { id: 18, title: 'SOME NICE CLICKS', category: 'Video', video: 'https://res.cloudinary.com/dy3y4uwwb/video/upload/v1787337256/romantic_lexidc.mp4', type: 'video' },
+  
+        { id: 19, title: 'My self', category: 'Video', video: 'https://res.cloudinary.com/dy3y4uwwb/video/upload/v1787505915/myselfvid_lumqlf.mp4', type: 'video' },
   
   
 ];

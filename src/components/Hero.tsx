@@ -21,11 +21,18 @@ export default function Hero() {
           </h1>
           <div className="flex flex-wrap gap-4 mb-8">
             <span className="text-xl md:text-2xl font-display text-accent border-b-2 border-primary pb-1">
-              GRAPHIC DESIGNER
+              VIDEO EDITOR 
             </span>
-            <span className="text-xl md:text-2xl font-display text-accent border-b-2 border-primary pb-1">
-              VIDEO EDITOR
-            </span>
+            
+
+                 <span className="text-sm md:text-base font-display text-accent border-b-2 border-primary pb-1">
+  & 
+</span>
+
+            <span className="text-sm md:text-base font-display text-accent border-b-2 border-primary pb-1">
+  GRAPHIC DESIGNER
+</span>
+
           </div>
           
           <p className="text-lg text-accent max-w-xl mb-10 leading-relaxed">
