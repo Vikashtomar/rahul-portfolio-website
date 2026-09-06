@@ -14,7 +14,8 @@ const projects = [
    { id: 5, title: 'abhi bus', category: 'social media post', img: 'https://res.cloudinary.com/dy3y4uwwb/image/upload/v1774784897/sale_idxcg7.jpg' },
    { id: 6, title: 'social media', category: 'social media post', img: 'https://res.cloudinary.com/dy3y4uwwb/image/upload/v1778347422/froot_cbfd4z.jpg' },
 
-  //  { id: 7, title: 'social media', category: 'social media', img: 'https://res.cloudinary.com/dy3y4uwwb/image/upload/v1778347422/froot_cbfd4z.jpg' },
+
+   { id: 7, title: 'social media', category: 'social media post', img: 'https://res.cloudinary.com/dy3y4uwwb/image/upload/v1774804691/tatas_j2yr0l.jpg' },
    
 
    
